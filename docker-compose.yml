@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  service:
+    build: .
+    container_name: minigame_service
+    hostname: minigame_service
+    ports:
+      - 3000:3000
+    networks:
+      - app-network
+    volumes:
+      - ./src/:/app/src/
+      - .env/:/app/.env
+    restart: unless-stopped
+networks:
+  app-network:
+    name: app-network
+    driver: bridge
+volumes:
+  dbdata:

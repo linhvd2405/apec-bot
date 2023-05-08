@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+.container {
+  width: 100%;
+  
+}
+/*  */
+.info-table{
+    margin-bottom: -10px;
+}
+.info-table-stock{
+    display: flex;
+    align-items: center;
+    background-color: #ac2e23;
+    color: aliceblue;
+    justify-content: space-between;
+    border: 1px solid black;
+    font-weight: bold;
+    /* height: 70px; */
+}
+.stock-info{
+    height:60px ;
+    padding: 5px 0 0 10px;
+}
+.stock-info-line1{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.stock-info-line1, .stock-info-line2{
+    padding-left: 30px;
+}
+.stock-info-line1 p{
+    padding-right: 4px;
+    padding-left: 2px;
+    border-right: 2px solid aliceblue;
+    line-height: 16px;
+
+}
+
+
+.logo{
+    width: 75px;
+    height: 20px;
+    margin-right: 40px;
+}
+
+/* */
+.content-chart{
+    line-height: 25px;
+    background-color: rgb(228, 228, 228);
+    padding-left: 10px;
+    margin-top: -20px;
+    
+}
+.chart-img{
+    width: 100%;
+}
+
+
+
+ .img-buy_2{
+    width: 50%;
+}
+/* */
+
+.content-infor{
+    line-height: 25px;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-companyIntro{
+    padding: 5px 28px;
+    font-size: 16px;
+}
+
+/* */
+.stock-analysis{
+    display: flex;
+}
+
+.stock-analysis_synthesis, .stock-analysis_codes{
+    width: 50%;
+}
+
+.synthesis-heading, .codes-heading{
+    background-color: rgb(228, 228, 228);
+    padding-left: 30px;
+
+}
+.synthesis-item, .codes-item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.3;  
+    
+}
+.synthesis-item strong, .codes-item strong{
+    padding-left: 30px;
+
+}
+.synthesis-item span, .codes-item span{
+    padding-right: 50px;
+}
+/**/
+.stock-analysis-info{
+    /* display: flex; */
+    font-size: 15px;
+    /* width: 50%; */
+
+}
+
+.stock-analysis-info_chart, .stock-analysis-info_prospect{
+    /* width: 50%; */
+}
+.info_chart-heading , .info_prospect-heading{
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.info_prospect-content{
+    padding: 10px 0px 10px 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black !important;
+  }
+  
+  td, th {
+    border: 3px solid black !important;
+    line-height: 40px !important;
+    font-weight: bold;
+  }
+  
+
+table th{
+    text-align: center;
+}
+
+
+.chart_line1, .chart_line2{
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
+    /* border-bottom: solid 1px #ccc; */
+}
+
+.chart_line2{
+    margin-bottom: 20px;
+}
+
+
+#chart_rev, #chart_profit, #chart_asset ,#chart_currency {
+    padding-left: 15px;
+}
+/* tín hiệu */
+.info_prospect-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.infor_signal{
+    border: 3px solid #e84226;
+    padding-left: 0;
+
+}
+
+.infor_signal div {
+    padding-left: 30px;
+}
+
+.infor_signal , .chart-img{
+    width: 50%;
+}
+
+.infor_signal-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor_signal-item span{
+    color:#05aa02 ;
+    padding-right: 60px;
+}
+
+.infor_signal-item span, p{
+    margin-bottom: 0;
+}
+
+.img-buy_2{
+    height: 100%;
+    width: 100%;
+}

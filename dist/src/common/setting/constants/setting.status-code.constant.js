@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ENUM_SETTING_STATUS_CODE_ERROR = void 0;
+var ENUM_SETTING_STATUS_CODE_ERROR;
+(function (ENUM_SETTING_STATUS_CODE_ERROR) {
+    ENUM_SETTING_STATUS_CODE_ERROR[ENUM_SETTING_STATUS_CODE_ERROR["SETTING_NOT_FOUND_ERROR"] = 5900] = "SETTING_NOT_FOUND_ERROR";
+})(ENUM_SETTING_STATUS_CODE_ERROR = exports.ENUM_SETTING_STATUS_CODE_ERROR || (exports.ENUM_SETTING_STATUS_CODE_ERROR = {}));
+//# sourceMappingURL=setting.status-code.constant.js.map

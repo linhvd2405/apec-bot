@@ -1,0 +1,41 @@
+export declare class StockGetSerialization {
+    readonly _id: string;
+    readonly isActive: boolean;
+    readonly status: number;
+    readonly stockCode: string;
+    readonly nameCompany: string;
+    readonly exchangeCode: string;
+    readonly rating: string;
+    readonly industry: string;
+    readonly refPrice: number;
+    readonly liquidity: string;
+    readonly shortTrend: string;
+    readonly targetPrice: number;
+    readonly cutlossPrice: number;
+    readonly trandingDate: Date;
+    readonly overview: string;
+    readonly marketCapital: number;
+    readonly sumVol10d: number;
+    readonly outstandingShares: number;
+    readonly eps: number;
+    readonly pe: number;
+    readonly de: number;
+    readonly roe: number;
+    readonly netInc: number[];
+    readonly netRev: number[];
+    readonly debt: number[];
+    readonly loan: number[];
+    readonly cfi: number[];
+    readonly cfo: number[];
+    readonly cff: number[];
+    readonly reportDate: string[];
+    readonly adx: string;
+    readonly rsi: string;
+    readonly macd: string;
+    readonly stockCodes: {
+        stockCode: string;
+        rating: string;
+    }[];
+    readonly createdAt: Date;
+    readonly updatedAt: Date;
+}

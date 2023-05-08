@@ -1,0 +1,1527 @@
+{
+  _id: '3d45d245-f6ea-40f6-93c3-e005568abf24',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:01:52.250Z'
+}
+{
+  _id: 'eeb71bae-59f8-4571-a5c2-9016aa1b6ed7',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T09:05:11.725Z'
+}
+{
+  _id: 'c4a80022-c01a-4c90-a139-eebe896ff252',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:05:50.147Z'
+}
+{
+  _id: 'bbbae866-8bc7-47e8-8cbf-517d6e209dc5',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at I18nMiddleware.use (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/nestjs-i18n/src/middlewares/i18n.middleware.ts:63:5)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:17 {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-11T09:06:04.776Z'
+}
+{
+  _id: '4cbe878c-db5f-4957-9ebd-be10344a2975',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:06:22.715Z'
+}
+{
+  _id: '077a2f87-bb98-4369-84f1-7c56a9e27716',
+  class: 'StockAdminController',
+  function: 'get',
+  path: '/api/v1/admin/stock/get/b582caeda1ca308dbade9b7e',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:12:53.728Z'
+}
+{
+  _id: '0481937f-6ce3-4958-8d3a-914ae6d17b21',
+  class: 'StockAdminController',
+  function: 'get',
+  path: '/api/v1/admin/stock/get/b8abc6241aeef4369b409e0f',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:13:20.898Z'
+}
+{
+  _id: 'c9525e5d-d0ed-421b-b7bc-6d3605062c1a',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T09:17:00.214Z'
+}
+{
+  _id: '05d313c9-7f9a-47a9-aaac-d8555f23c8e8',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T09:33:45.881Z'
+}
+{
+  _id: 'cee22507-7d4e-46e4-88fe-ae2839c8511b',
+  class: 'StockAdminController',
+  function: 'list',
+  path: '/api/v1/admin/stock/list',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:41:06.243Z'
+}
+{
+  _id: '0bbe9ef9-b936-484c-97e7-7b4ceffa09a4',
+  class: 'BotAdminController',
+  function: 'list',
+  path: '/api/v1/admin/bot/list',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:41:59.958Z'
+}
+{
+  _id: '95ff00ee-e09a-485d-8a91-6994228973c9',
+  class: 'RoleAdminController',
+  function: 'list',
+  path: '/api/v1/admin/role/list',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:42:16.697Z'
+}
+{
+  _id: '5c601f29-8ab7-44b5-97b3-cfeefd97dca1',
+  class: 'StockAdminController',
+  function: 'update',
+  path: '/api/v1/admin/stock/update/50dcbd3acb3aede9adc38bab',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockUpdateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockUpdateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T09:51:42.582Z'
+}
+{
+  _id: '8f87e3e9-26bb-4a3c-a266-bbd291adc471',
+  class: 'StockAdminController',
+  function: 'delete',
+  path: '/api/v1/admin/stock/delete/50dcbd3acb3aede9adc38bab',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.delete (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:327:15)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: "Cannot read property '_id' of undefined"
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-11T09:52:21.504Z'
+}
+{
+  _id: '09625e4e-2b6f-4a0e-a340-2289a4f1f28d',
+  class: 'StockAdminController',
+  function: 'inactive',
+  path: '/api/v1/admin/stock/update/50dcbd3acb3aede9adc38bab/inactive',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.inactive (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:348:15)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: "Cannot read property '_id' of undefined"
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-11T09:52:32.661Z'
+}
+{
+  _id: '25103dc6-a552-4d5b-a1fb-3d89e66281bd',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T09:54:26.235Z'
+}
+{
+  _id: '0380c3da-a553-4373-93a7-e571024a39bc',
+  class: 'RoleAdminController',
+  function: 'delete',
+  path: '/api/v1/admin/role/delete/fdfad2d6db3f103ee04ebb1f',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at RoleAdminController.delete (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:249:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: "Cannot read property '_id' of undefined"
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-11T09:55:41.549Z'
+}
+{
+  _id: 'a4334da2-babf-46f8-bf2f-3965efbbf8bc',
+  class: 'RoleAdminController',
+  function: 'inactive',
+  path: '/api/v1/admin/role/update/fdfad2d6db3f103ee04ebb1f/inactive',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at RoleAdminController.inactive (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:270:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:38:29
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: "Cannot read property '_id' of undefined"
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-11T09:55:57.670Z'
+}
+{
+  _id: 'eded205a-3cb6-4a09-8bb3-63ecd11e3a76',
+  class: 'UserAdminController',
+  function: 'inactive',
+  path: '/api/v1/admin/user/update/bcacfbb6024fa2a29407deba/inactive',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T09:56:20.319Z'
+}
+{
+  _id: 'a126b274-647a-430f-98d3-a0bad69441c1',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T10:04:04.039Z'
+}
+{
+  _id: '22e43cfe-78bb-46b9-98d2-863342302bea',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T10:04:34.916Z'
+}
+{
+  _id: 'f80933f5-c4a4-4233-98df-353acafb3959',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T10:09:07.895Z'
+}
+{
+  _id: 'be010056-64db-4f3d-aae5-aea55a90038a',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: RoleCreateDto {
+            name: 'District Assurance Facilitator',
+            permissions: [ '6422807556705e2299de0613' ],
+            accessFor: 'BAO'
+          },
+          value: 'BAO',
+          property: 'accessFor',
+          children: [],
+          constraints: { isEnum: 'accessFor must be a valid enum value' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T10:10:53.373Z'
+}
+{
+  _id: 'e3e5e81d-45a8-4239-bdc8-1cb36ea126f3',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T10:14:26.091Z'
+}
+{
+  _id: '91b71931-9a8c-4e43-99c0-41fbff7793b1',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:03:46.020Z'
+}
+{
+  _id: 'f770fa16-eb64-4571-9bc8-6f27c139e31e',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:14:31.502Z'
+}
+{
+  _id: 'cc90d3eb-d932-442b-b424-225a7845f807',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:15:10.308Z'
+}
+{
+  _id: '9db9b550-c39b-48ee-a652-8fb891edba41',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:21:59.053Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:21:59.053Z',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:21:59.053Z',
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:21:59.053Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:21:59.053Z',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:21:59.053Z',
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:22:02.501Z'
+}
+{
+  _id: '769d4c2a-1116-4b70-a3c9-d0d040df9227',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:21:59.053Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:21:59.053Z',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:21:59.053Z',
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:21:59.053Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:21:59.053Z',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:21:59.053Z',
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:22:47.701Z'
+}
+{
+  _id: 'dac661ec-12c4-42c4-bcc6-4c2dd3302c8c',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:24:29.805',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:24:29.805',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:24:29.805',
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:24:29.805',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:24:29.805',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:24:29.805',
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:24:41.459Z'
+}
+{
+  _id: '1d092a45-7929-4305-a567-9bf2455dabd7',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:24:29.805',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:24:29.805',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:24:29.805',
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: '2023-04-11T11:24:29.805',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-11T11:24:29.805',
+            shortTrend: 'string'
+          },
+          value: '2023-04-11T11:24:29.805',
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T11:25:42.169Z'
+}
+{
+  _id: '5e28b9b4-dc65-4baa-8ef5-089bc5d5b6cf',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: stock.error.exist
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:163:15)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5502, message: 'stock.error.exist' },
+    status: 400
+  },
+  level: 'error',
+  message: 'stock.error.exist',
+  timestamp: '2023-04-11T11:26:53.192Z'
+}
+{
+  _id: 'a7982a7a-4faf-4ce1-88cc-821edaf7378f',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T15:41:05.350Z'
+}
+{
+  _id: 'fa55a876-7be0-4176-aa30-7d8de47450fd',
+  class: 'UserAdminController',
+  function: 'create',
+  path: '/api/v1/admin/user/create',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T15:41:59.385Z'
+}
+{
+  _id: '6aa949e3-18d6-4f58-b0d2-ba22a0bbe3ef',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: stock.error.exist
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:163:15)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5502, message: 'stock.error.exist' },
+    status: 400
+  },
+  level: 'error',
+  message: 'stock.error.exist',
+  timestamp: '2023-04-11T15:52:50.271Z'
+}
+{
+  _id: 'a0cb5a50-f3fe-43ee-ac78-a4eaac064ca3',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T15:59:53.869Z'
+}
+{
+  _id: 'f41bde54-86d9-4f3a-8ac3-1ad06ba1cf8c',
+  class: 'RoleAdminController',
+  function: 'create',
+  path: '/api/v1/admin/role/create',
+  data: NotFoundException: permission.error.notFound
+      at RoleAdminController.create (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/role/controllers/role.admin.controller.ts:154:23)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5200, message: 'permission.error.notFound' },
+    status: 404
+  },
+  level: 'error',
+  message: 'permission.error.notFound',
+  timestamp: '2023-04-11T16:05:49.865Z'
+}
+{
+  _id: 'd8fdfd40-96fc-4400-975a-b4b506767e02',
+  class: 'UserAdminController',
+  function: 'create',
+  path: '/api/v1/admin/user/create',
+  data: UnauthorizedException: http.clientError.unauthorized
+      at JwtGuard.handleRequest (/Users/mac/Downloads/apec.minigame.api-develop/src/common/auth/guards/jwt/auth.jwt.guard.ts:13:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:49:128
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:91:24
+      at allFailed (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:110:18)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:183:28)
+      at JwtStrategy.strategy.fail (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:305:9)
+      at JwtStrategy.authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport-jwt/lib/strategy.js:96:21)
+      at attempt (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:369:16)
+      at authenticate (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/passport/lib/middleware/authenticate.js:370:7)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/passport/dist/auth.guard.js:96:3 {
+    response: {
+      statusCode: 5100,
+      message: 'http.clientError.unauthorized',
+      error: 'No auth token'
+    },
+    status: 401
+  },
+  level: 'error',
+  message: 'http.clientError.unauthorized',
+  timestamp: '2023-04-11T16:07:24.603Z'
+}
+{
+  _id: '5c663114-41f2-4c8d-854d-e92f5de63986',
+  class: 'UserController',
+  function: 'login',
+  path: '/api/v1/user/login',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: UserLoginDto {
+            email: 'Viva',
+            rememberMe: false,
+            password: 'w2sewJ8BL9@@!123'
+          },
+          value: 'Viva',
+          property: 'email',
+          children: [],
+          constraints: { isEmail: 'email must be an email' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-11T16:09:34.609Z'
+}
+{
+  _id: '35febc20-6cac-4866-ac6b-dfd26535726d',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: stock.error.exist
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:163:15)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+    response: { statusCode: 5502, message: 'stock.error.exist' },
+    status: 400
+  },
+  level: 'error',
+  message: 'stock.error.exist',
+  timestamp: '2023-04-11T16:11:24.456Z'
+}

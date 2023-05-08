@@ -1,0 +1,68 @@
+{
+  _id: '6a8df323-27af-49eb-bf61-0bf3036355d5',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: stock.error.exist
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:165:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: { statusCode: 5502, message: 'stock.error.exist' },
+    status: 400
+  },
+  level: 'error',
+  message: 'stock.error.exist',
+  timestamp: '2023-04-14T09:47:04.725Z'
+}
+{
+  _id: '1d32458e-7d2e-404e-94a3-9b99ec7a1433',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: stock.error.exist
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:165:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: { statusCode: 5502, message: 'stock.error.exist' },
+    status: 400
+  },
+  level: 'error',
+  message: 'stock.error.exist',
+  timestamp: '2023-04-14T09:47:20.158Z'
+}
+{
+  _id: '1ec4aaee-1156-492e-9cb5-f9fa9bced82f',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:198:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-14T09:47:55.531Z'
+}
+{
+  _id: '8b13adf0-dd25-4e4a-aa50-3e9c546e4500',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:198:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-14T09:48:20.846Z'
+}

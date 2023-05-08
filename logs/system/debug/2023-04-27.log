@@ -1,0 +1,426 @@
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7BstockId%7D',
+  data: CastError: Cast to ObjectId failed for value "${stockId}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${stockId}"',
+    kind: 'ObjectId',
+    value: '${stockId}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-26T17:52:42.749Z'
+}
+{
+  _id: '527e3e49-413f-419b-a959-dc4893622b49',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:246:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: "Cannot read properties of undefined (reading 'Options')"
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-26T17:56:08.409Z'
+}
+{
+  _id: '8a65bb81-88a2-4179-98ce-757dbca3ef65',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'AAA',
+            nameCompany: 'Công ty Cổ phần Nhựa An Phát Xanh',
+            exchangeCode: 'HOSE',
+            rating: 'B',
+            industry: 'Nguyên vật liệu',
+            overview: '\n' +
+              'Công ty Cổ phần Nhựa An Phát Xanh (AAA) có tiền thân là Công ty TNHH Anh Hai Duy được thành lập vào năm 2002. Công ty hoạt động chính trong lĩnh vực sản xuất các loại bao bì nhựa. Công ty là doanh nghiệp có quy mô lớn nhất trong ngành với 07 nhà máy sản xuất bao bì có tổng công suất 108.000 tấn/năm và 01 nhà máy sản xuất phụ gia CaCO3 An Phát - Yên Bái có công suất 222.000 tấn/năm. So với các doanh nghiệp cùng ngành trong nước khác như Công ty Cổ phần Nhựa Hưng Yên (công suất khoảng 1.000 tấn/tháng), Công ty Cổ phần Nhựa Tú Phương (công suất khoảng 800 tấn/tháng) và một số doanh nghiệp liên doanh khác ở Phía Nam (công suất dao động từ 500 – 700 tấn/tháng).  AAA được niêm yết và giao dịch trên Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) từ cuối năm 2016.\n' +
+              '\n',
+            outstandingShares: 382274496,
+            eps: 430.0755456726,
+            pe: 22.0658907382,
+            roe: 0.0262523677,
+            de: 0.7493936661,
+            netRev: [
+              9258073280674,
+              7428557015044,
+              13143109864001,
+              15290297073087
+            ],
+            netInc: [ 460465909779, 262240818737, 290241012297, 152599331716 ],
+            debt: [ 1.4537234096, 1.1295960112, 0.8351349645, 0.7493936661 ],
+            loan: [ 1.158623878, 0.8848258785, 0.6158679583, 0.5072267251 ],
+            cfi: [
+              -859852119851,
+              34701081384,
+              -150390199871,
+              -1093758714092
+            ],
+            cfo: [ 489340910473, 612538718206, 443620282772, 97095210426 ],
+            cff: [ 17309999717, 25588860731, 739244815406, 630942186793 ],
+            trandingDate: '2023-04-27 13:50:53',
+            refPrice: 10,
+            targetPrice: 11.5,
+            cutlossPrice: 9.3,
+            marketCapital: 3822744960,
+            liquidity: 'string',
+            shortTrend: 'true',
+            sumVol10d: 10,
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            stockCodes: [ { AAA: 'C' }, { ABT: 'D' }, { ACB: 'C' } ],
+            adx: 'string',
+            rsi: 'string',
+            mfi: 'string',
+            status: 'processing'
+          },
+          value: undefined,
+          property: 'macd',
+          children: [],
+          constraints: {
+            isNotEmpty: 'macd should not be empty',
+            isString: 'macd must be a string'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-27T06:50:54.038Z'
+}
+{
+  _id: 'de3f6a10-5768-44d4-9fbf-40ad2ab581c9',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:258:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'StockEntity validation failed: _id: Path `_id` is required.'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-27T08:39:43.442Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected token { in JSON at position 23
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: 'Unexpected token { in JSON at position 23',
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: 'Unexpected token { in JSON at position 23',
+  timestamp: '2023-04-27T08:40:49.963Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7BstockId%7D',
+  data: CastError: Cast to ObjectId failed for value "${stockId}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${stockId}"',
+    kind: 'ObjectId',
+    value: '${stockId}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:11:24.945Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7BstockId%7D',
+  data: CastError: Cast to ObjectId failed for value "${stockId}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${stockId}"',
+    kind: 'ObjectId',
+    value: '${stockId}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:13:37.616Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7BstockId%7D',
+  data: CastError: Cast to ObjectId failed for value "${stockId}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at runNextTicks (node:internal/process/task_queues:64:3)
+      at processImmediate (node:internal/timers:447:9) {
+    messageFormat: undefined,
+    stringValue: '"${stockId}"',
+    kind: 'ObjectId',
+    value: '${stockId}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:14:51.029Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7BstockId%7D',
+  data: CastError: Cast to ObjectId failed for value "${stockId}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${stockId}"',
+    kind: 'ObjectId',
+    value: '${stockId}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:19:41.068Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7B_id%7D',
+  data: CastError: Cast to ObjectId failed for value "${_id}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${_id}"',
+    kind: 'ObjectId',
+    value: '${_id}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:21:32.470Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/$%7B_id.toString()%7D',
+  data: CastError: Cast to ObjectId failed for value "${_id.toString()}" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"${_id.toString()}"',
+    kind: 'ObjectId',
+    value: '${_id.toString()}',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:23:16.568Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/get/null',
+  data: CastError: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"null"',
+    kind: 'ObjectId',
+    value: 'null',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:29:47.131Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/id',
+  data: CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "StockEntity"
+      at model.Query.exec (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4891:21)
+      at model.Query.Query.then (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:4990:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"id"',
+    kind: 'ObjectId',
+    value: 'id',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/error.ts:16:5)
+        at new ObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/node_modules/bson/src/objectid.ts:88:15)
+        at castObjectId (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast/objectid.js:25:12)
+        at ObjectId.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schema/objectid.js:246:12)
+        at ObjectId.SchemaType.applySetters (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1201:12)
+        at ObjectId.SchemaType._castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1648:15)
+        at ObjectId.SchemaType.castForQuery (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1636:15)
+        at ObjectId.SchemaType.castForQueryWrapper (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/schematype.js:1612:20)
+        at cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/cast.js:347:32)
+        at model.Query.Query.cast (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongoose/lib/query.js:5319:12),
+    valueType: 'string'
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-27T09:57:25.662Z'
+}

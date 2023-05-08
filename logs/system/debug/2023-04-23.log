@@ -1,0 +1,945 @@
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected token , in JSON at position 794
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: 'Unexpected token , in JSON at position 794',
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: 'Unexpected token , in JSON at position 794',
+  timestamp: '2023-04-23T05:09:12.265Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected token , in JSON at position 788
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: 'Unexpected token , in JSON at position 788',
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: 'Unexpected token , in JSON at position 788',
+  timestamp: '2023-04-23T05:18:17.697Z'
+}
+{
+  _id: '67558009-4345-4172-b705-696ffaf11473',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:03.628Z'
+}
+{
+  _id: '486b75dd-ada0-4954-80c9-b4c9bbb9290b',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:03.902Z'
+}
+{
+  _id: '46b341f9-ef75-40c5-af0d-fa1bb563b4f7',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:04.098Z'
+}
+{
+  _id: '85ee1c15-8a3c-4f51-8009-42b145ee123e',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:04.312Z'
+}
+{
+  _id: '9edd2236-e74f-4ab9-ba70-bfc4d776b6bb',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:04.504Z'
+}
+{
+  _id: '6647a606-07a6-4dd4-bc97-8f34e3beb24f',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:04.711Z'
+}
+{
+  _id: '5d481476-7b26-44c3-ad14-ea62767f3e79',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:04.953Z'
+}
+{
+  _id: '0a74ac6b-9087-45c5-832a-772e351e0b8b',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:05.131Z'
+}
+{
+  _id: 'c1af95b6-dacd-44fe-a9bb-d975df8ffc4b',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:05.333Z'
+}
+{
+  _id: '4e9f2c71-6eb3-4d70-8140-4dba4c8ba685',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:05.552Z'
+}
+{
+  _id: '0517f86f-12ac-4a17-bc5c-84f5c78255b7',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:05.759Z'
+}
+{
+  _id: 'cb45bc5f-2ecc-482f-a3e7-0bffcae9f33e',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:05.955Z'
+}
+{
+  _id: 'e006b8ca-c075-4ba1-a2f2-0748a5c8651e',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:06.165Z'
+}
+{
+  _id: '45c96d62-907d-4cc2-be42-b6034b81cb36',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:06.369Z'
+}
+{
+  _id: '5a2d698e-c496-4e92-888d-b7eb9f678a5c',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:06.595Z'
+}
+{
+  _id: '6369346c-f519-4a52-a5a7-a872163581c6',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:06.781Z'
+}
+{
+  _id: '6ded53cd-de49-4c3e-ac77-a0804592382d',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:06.992Z'
+}
+{
+  _id: '73a052fa-b1e6-4cda-a54f-f2689b733f1c',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:07.192Z'
+}
+{
+  _id: '617c3319-53ba-4ee4-99e4-0e03ff1565b2',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:07.398Z'
+}
+{
+  _id: 'b84f1ff2-b7fd-4223-ab2e-3e22d17a913a',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:07.624Z'
+}
+{
+  _id: 'b2c22e3f-485a-444b-9be6-7ba4b0310b80',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:07.808Z'
+}
+{
+  _id: 'a24112e0-9350-4512-82cc-fd959987e362',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:08.016Z'
+}
+{
+  _id: '2e7bba80-63f8-4961-877c-94eb97400923',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:08.223Z'
+}
+{
+  _id: '1dad9b05-799f-4861-b89a-0fb1b3150545',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:08.434Z'
+}
+{
+  _id: '9891cf2b-3a16-4668-a2b7-0bf4f9c9323d',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:08.624Z'
+}
+{
+  _id: '062577d6-715d-46dc-9966-2862e611cf2d',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:08.842Z'
+}
+{
+  _id: 'ed7c2674-fd25-4e09-a1fd-3c180397fb55',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:09.099Z'
+}
+{
+  _id: '9b497228-c71c-4654-a39e-5b60d5a9724d',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:09.367Z'
+}
+{
+  _id: 'dcb09639-fee5-4062-848f-629a0e1cb6d7',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:09.587Z'
+}
+{
+  _id: 'a3e5f362-0e38-47f4-86d7-d56762eca053',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:09.775Z'
+}
+{
+  _id: '2931d389-bacb-48ab-81ef-c787d89dded4',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:09.972Z'
+}
+{
+  _id: '877d77b1-d906-4f0d-b4cf-916ca9983a91',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: NotFoundException: Cannot GET /api/v1/admin/stock/create
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:77:19)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:9:23
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:328:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/route.js:129:14)
+      at renderFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/serve-static/dist/loaders/express.loader.js:35:21)
+      at Layer.handle [as handle_request] (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:95:5) {
+    response: {
+      statusCode: 404,
+      message: 'Cannot GET /api/v1/admin/stock/create',
+      error: 'Not Found'
+    },
+    status: 404
+  },
+  level: 'error',
+  message: 'Cannot GET /api/v1/admin/stock/create',
+  timestamp: '2023-04-23T06:53:10.178Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected string in JSON at position 772
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: 'Unexpected string in JSON at position 772',
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: 'Unexpected string in JSON at position 772',
+  timestamp: '2023-04-23T16:03:15.509Z'
+}

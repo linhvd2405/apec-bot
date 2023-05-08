@@ -1,0 +1,12 @@
+import { IPaginationFilterDateOptions, IPaginationFilterOptions, IPaginationFilterStringOptions } from 'src/common/pagination/interfaces/pagination.interface';
+export declare function PaginationSearch(availableSearch: string[]): any;
+export declare function PaginationAvailableSearch(availableSearch: string[]): any;
+export declare function PaginationPage(page?: number): any;
+export declare function PaginationPerPage(perPage?: number): any;
+export declare function PaginationSort(sort?: string, availableSort?: string[]): any;
+export declare function PaginationAvailableSort(availableSort?: string[]): any;
+export declare function PaginationFilterBoolean(defaultValue: boolean[]): any;
+export declare function PaginationFilterEnum<T>(defaultValue: T[], defaultEnum: Record<string, any>): any;
+export declare function PaginationFilterId(field: string, options?: IPaginationFilterOptions): any;
+export declare function PaginationFilterDate(field: string, options?: IPaginationFilterDateOptions): any;
+export declare function PaginationFilterString(field: string, options?: IPaginationFilterStringOptions): <TFunction extends Function, Y>(target: object | TFunction, propertyKey?: string | symbol, descriptor?: TypedPropertyDescriptor<Y>) => void;

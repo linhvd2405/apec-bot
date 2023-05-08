@@ -1,0 +1,1426 @@
+{
+  _id: '90eaf25b-2388-43c2-a908-e0b88b9aabe0',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:15:40.240Z'
+}
+{
+  _id: 'c3e4b3d9-e890-448d-adac-8ece95c8a216',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'HPG',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-16T09:30:15.983Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-16T09:30:15.983Z',
+            industryOutlook: 'string'
+          },
+          value: '2023-04-16T09:30:15.983Z',
+          property: 'reportDate',
+          children: [],
+          constraints: {
+            isArray: 'reportDate must be an array',
+            arrayNotEmpty: 'reportDate should not be empty'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:15:58.577Z'
+}
+{
+  _id: 'eaa472d3-42dd-4408-b7f4-5eb8dfb99ed5',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:23:56.114Z'
+}
+{
+  _id: '73ef1116-5039-4307-a75d-070c672f0f6c',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'HPG',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-16T09:30:15.983Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: '2023-04-16T09:30:15.983Z',
+            industryOutlook: 'string'
+          },
+          value: '2023-04-16T09:30:15.983Z',
+          property: 'reportDate',
+          children: [],
+          constraints: {
+            isArray: 'reportDate must be an array',
+            arrayNotEmpty: 'reportDate should not be empty'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:24:08.593Z'
+}
+{
+  _id: '537b7cf4-8c5b-4133-9ca7-48fbd7ba8d8f',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'string',
+            stockCode: 'string',
+            nameCompany: 'string',
+            exchangeCode: 'string',
+            rating: 'string',
+            industry: 'string',
+            refPrice: 0,
+            liquidity: 'string',
+            shortTrend: 'string',
+            targetPrice: 0,
+            cutlossPrice: 0,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            eps: 0,
+            pe: 0,
+            roa: 0,
+            roe: 0,
+            netRev: [ 0 ],
+            netInc: [ 0 ],
+            reportDate: [ 'string' ],
+            industryOutlook: 'string'
+          },
+          value: [ 0 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:24:34.556Z'
+}
+{
+  _id: 'b351b288-fad2-43d2-beed-28e143d0ca90',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'đang xử lý',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '12/26',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 12,
+            liquidity: 'aaaa',
+            shortTrend: 'trung bình',
+            targetPrice: 17.8,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'bbbbbb',
+            marketCapital: 15000,
+            sumVol10d: 1267,
+            outstandingShares: 12,
+            eps: 12,
+            pe: 23,
+            roa: 1,
+            roe: 3,
+            netRev: [ 198, 234, 345, 123 ],
+            netInc: [ 12, 3, 4, 5 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'cccc'
+          },
+          value: [ 198, 234, 345, 123 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'đang xử lý',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '12/26',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 12,
+            liquidity: 'aaaa',
+            shortTrend: 'trung bình',
+            targetPrice: 17.8,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'bbbbbb',
+            marketCapital: 15000,
+            sumVol10d: 1267,
+            outstandingShares: 12,
+            eps: 12,
+            pe: 23,
+            roa: 1,
+            roe: 3,
+            netRev: [ 198, 234, 345, 123 ],
+            netInc: [ 12, 3, 4, 5 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'cccc'
+          },
+          value: [ 12, 3, 4, 5 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:28:33.375Z'
+}
+{
+  _id: 'cdcff14a-b95a-486a-a49f-805d7ec40539',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'đang xử lý',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '12/26',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 12,
+            liquidity: 'aaaa',
+            shortTrend: 'trung bình',
+            targetPrice: 17.8,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'bbbbbb',
+            marketCapital: 15000,
+            sumVol10d: 1267,
+            outstandingShares: 12,
+            eps: 12,
+            pe: 23,
+            roa: 1,
+            roe: 3,
+            netRev: [ 198, 234, 345, 123 ],
+            netInc: [ 12, 3, 4, 5 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'cccc'
+          },
+          value: [ 198, 234, 345, 123 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'đang xử lý',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '12/26',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 12,
+            liquidity: 'aaaa',
+            shortTrend: 'trung bình',
+            targetPrice: 17.8,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:15:37.764Z',
+            overview: 'bbbbbb',
+            marketCapital: 15000,
+            sumVol10d: 1267,
+            outstandingShares: 12,
+            eps: 12,
+            pe: 23,
+            roa: 1,
+            roe: 3,
+            netRev: [ 198, 234, 345, 123 ],
+            netInc: [ 12, 3, 4, 5 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'cccc'
+          },
+          value: [ 12, 3, 4, 5 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:28:58.881Z'
+}
+{
+  _id: 'c368eba1-56b9-41f5-a6c9-d3ca247a0522',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'processing',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '3/36',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 15,
+            liquidity: 'trung bình',
+            shortTrend: 'cao',
+            targetPrice: 17,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:37:30.044Z',
+            overview: 'aaaaaaa',
+            marketCapital: 15600,
+            sumVol10d: 145,
+            outstandingShares: 16666,
+            eps: 12,
+            pe: 15,
+            roa: 18,
+            roe: 12,
+            netRev: [ 1, 2, 4, 5 ],
+            netInc: [ 3, 4, 5, 6 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'bbbbbbbbb'
+          },
+          value: [ 1, 2, 4, 5 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'processing',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '3/36',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 15,
+            liquidity: 'trung bình',
+            shortTrend: 'cao',
+            targetPrice: 17,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:37:30.044Z',
+            overview: 'aaaaaaa',
+            marketCapital: 15600,
+            sumVol10d: 145,
+            outstandingShares: 16666,
+            eps: 12,
+            pe: 15,
+            roa: 18,
+            roe: 12,
+            netRev: [ 1, 2, 4, 5 ],
+            netInc: [ 3, 4, 5, 6 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'bbbbbbbbb'
+          },
+          value: [ 3, 4, 5, 6 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:41:29.482Z'
+}
+{
+  _id: '437cd6f6-f7ef-4077-be27-b8feeeff508d',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            status: 'processing',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '3/36',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 15,
+            liquidity: 'trung bình',
+            shortTrend: 'cao',
+            targetPrice: 17,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:37:30.044Z',
+            overview: 'aaaaaaa',
+            marketCapital: 15600,
+            sumVol10d: 145,
+            outstandingShares: 16666,
+            eps: 12,
+            pe: 15,
+            roa: 18,
+            roe: 12,
+            netRev: [ 1, 2, 4, 5 ],
+            netInc: [ 3, 4, 5, 6 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'bbbbbbbbb'
+          },
+          value: [ 1, 2, 4, 5 ],
+          property: 'netRev',
+          children: [],
+          constraints: {
+            isNumber: 'netRev must be a number conforming to the specified constraints'
+          }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            status: 'processing',
+            stockCode: 'HPG',
+            nameCompany: 'hoà phát',
+            exchangeCode: 'HOSE',
+            rating: '3/36',
+            industry: 'xây dựng và vật liệu',
+            refPrice: 15,
+            liquidity: 'trung bình',
+            shortTrend: 'cao',
+            targetPrice: 17,
+            cutlossPrice: 1.2,
+            trandingDate: '2023-04-19T10:37:30.044Z',
+            overview: 'aaaaaaa',
+            marketCapital: 15600,
+            sumVol10d: 145,
+            outstandingShares: 16666,
+            eps: 12,
+            pe: 15,
+            roa: 18,
+            roe: 12,
+            netRev: [ 1, 2, 4, 5 ],
+            netInc: [ 3, 4, 5, 6 ],
+            reportDate: [ '2019', '2020', '2021', '2022' ],
+            industryOutlook: 'bbbbbbbbb'
+          },
+          value: [ 3, 4, 5, 6 ],
+          property: 'netInc',
+          children: [],
+          constraints: {
+            isNumber: 'netInc must be a number conforming to the specified constraints'
+          }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-19T10:41:55.574Z'
+}
+{
+  _id: '6ca7c3ab-e51e-468e-8e1b-22404246f389',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:213:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-19T10:43:45.700Z'
+}
+{
+  _id: '12ec18be-20e9-4fee-b2d0-b4385681be39',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:213:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-19T10:47:18.187Z'
+}
+{
+  _id: 'ccc93b14-16b7-4f2b-b365-ce609d4daef7',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:213:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-04-19T10:47:57.463Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T10:54:10.891Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T10:54:39.403Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T10:54:40.580Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T10:54:41.439Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:12:27.910Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:12:29.522Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:12:30.968Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:14:40.540Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:14:49.267Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:25.435Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:25.898Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:26.208Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:26.716Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:26.950Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:27.119Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:16:58.493Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:19:02.170Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:19:32.296Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:21:37.609Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:26:25.902Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: taskId_1 dup key: { taskId: null }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { taskId: 1 },
+    keyValue: { taskId: null },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:26:39.512Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: stockCode_1 dup key: { stockCode: "ABC" }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { stockCode: 1 },
+    keyValue: { stockCode: 'ABC' },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:30:32.592Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: MongoServerError: E11000 duplicate key error collection: db_pm.stocks index: stockCode_1 dup key: { stockCode: "ABC" }
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/operations/insert.ts:85:25
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection_pool.ts:518:13
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:371:13
+      at handleOperationResult (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/sdam/server.ts:456:14)
+      at Connection.onMessage (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:450:5)
+      at MessageStream.<anonymous> (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/connection.ts:256:56)
+      at MessageStream.emit (node:events:513:28)
+      at processIncomingData (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:193:14)
+      at MessageStream._write (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/mongodb/src/cmap/message_stream.ts:70:5)
+      at writeOrBuffer (node:internal/streams/writable:392:12) {
+    index: 0,
+    code: 11000,
+    keyPattern: { stockCode: 1 },
+    keyValue: { stockCode: 'ABC' },
+    [Symbol(errorLabels)]: Set(0) {}
+  },
+  level: 'error',
+  message: 'Internal Server Error',
+  timestamp: '2023-04-19T11:31:24.662Z'
+}

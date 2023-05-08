@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/loader.js"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/html2canvas.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/screenshot.js"></script>
+    <script src="./assets/js/chart.revenue.profig.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+                <div class="info-table">
+                    <div class="info-table-stock">
+                        <div class="stock-info">
+                            <div class="stock-info-line1">
+                                <!-- tên mã cổ phiếu -->
+                                <p class="info-line1_item1"></p> 
+                                <!-- tên cty cổ phiếu -->
+                                <p class="info-line1_item2">  </p>
+                                <!-- tên sàn -->
+                                <p class="info-line1_item3"></p>
+                                <p >Rating :<span class="info-line1_item4"></span></p>
+                                
+                            </div>
+                            <div class="stock-info-line2">
+                                Ngành: <span class="info-line2_item1"></span>  (<span class="info-line2_item2"></span>)
+                            </div>
+                            
+                        </div>
+                        <img src="./assets/img/Logo_Apec.png" alt="" class="logo" >
+
+                    </div>
+                    <table class="table table-bordered table-dark" style="background-color: rgb(209, 209, 209);">
+                        <thead >
+                            <tr>
+                            <th>Thanh khoản</th>
+                            <th style="background-color: #f7e5d7">Tín hiệu</th>
+                            <th style="background-color: #f7e5d7">Giá</th>
+                            <th>Giá mục tiêu</th>
+                            <th>Giá cutloss</th>
+                            <th>Xu hướng ngắn hạn</th>
+                            <th>Upsize</th>
+                            </tr>
+                        </thead>
+                        <tbody style="text-align: center;">
+                            <!--cột thanh khoản -->
+                            <td class="data-col-1"></td>
+                            <!--cột tín hiệu -->
+                            <td class="data-col-2" style="background-color: #f7e5d7">MUA</td>
+                            <!--cột giá -->
+                            <td class="data-col-3" style="font-weight: bold; background-color: #f7e5d7;"> </td>
+                            <!--cột giá mục tiêu -->
+                            <td class="data-col-4" ></td>
+                                <!--cột giá cutloss -->
+                            <td class="data-col-5"></td>
+                            <!--cột xu hướng ngắn hạn -->
+                            <td class="data-col-6"></td>
+                                <!--cột Upsize -->
+                            <td class="data-col-7">15%</td>
+                        </tbody>
+                    </table>
+        </div>
+            
+            <p class="content-infor">TỔNG QUAN DOANH NGHIỆP</p>
+            <div class="content-companyIntro"></div>
+            <div class="stock-analysis">
+                <div class="stock-analysis_synthesis">
+                    <div class="synthesis-heading">Tổng hợp</div>
+                        <div class="synthesis-item">
+                            <strong >Vốn hoá </strong>
+                            <span class="synthesis-item_1-data"> </span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >SLCP </strong>
+                            <span class="synthesis-item_2-data"> </span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >TB KLGD</strong>
+                            <span class="synthesis-item_3-data"> </span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >EPS </strong>
+                            <span class="synthesis-item_4-data"></span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >P / E</strong>
+                            <span class="synthesis-item_5-data"></span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >ROE</strong>
+                            <span class="synthesis-item_6-data"></span>
+                        </div>
+                        <div class="synthesis-item">
+                            <strong >D/E </strong>
+                            <span class="synthesis-item_7-data"></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="stock-analysis_codes">
+                        <div class="codes-heading">Các mã cổ phiếu cùng ngành</div>
+                        <div class="codes-item">
+                            <strong class="codes-item_1"></strong>
+                            <span class="codes-item_1-data"></span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_2"></strong>
+                            <span class="codes-item_2-data"></span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_3"></strong>
+                            <span class="codes-item_3-data"> </span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_4"></strong>
+                            <span class="codes-item_4-data"> </span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_5"></strong>
+                            <span class="codes-item_5-data"> </span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_6"> </strong>
+                            <span class="codes-item_6-data"> </span>
+                        </div>
+                        <div class="codes-item">
+                            <strong class="codes-item_7"> </strong>
+                            <span class="codes-item_7-data"> </span>
+                        </div>
+                </div>
+            </div>
+            <div class="stock-analysis-info_prospect">
+                <div class="info_prospect-heading">TÍN HIỆU</div>
+                <div class="info_prospect-content">
+                    <div class="infor_signal">
+                        <strong class="infor_signal-header">Điểm kỹ thuật</strong>
+                        <div class="infor_signal-item">
+                            <p class="signal-item_1">EMA </p>
+                            <span class="signal-item_1-data"> Mua </span>
+                        </div>
+                        <div class="infor_signal-item">
+                            <p class="signal-item_2">OBV </p>
+                            <span class="signal-item_2-data"> Mua</span>
+                        </div>
+    
+                        <strong class="infor_signal-header">Điểm nền tảng</strong>
+    
+                        <div class="infor_signal-item">
+                            <p class="signal-item_3">Rating </p>
+                            <span class="signal-item_3-data"> </span>
+                        </div>
+    
+                        <strong class="infor_signal-header">Xu hướng</strong>
+    
+                        <div class="infor_signal-item">
+                            <p class="signal-item_4">ADX </p>
+                            <span class="signal-item_4-data" style="color: #fac745;">  </span>
+                        </div>
+                        <div class="infor_signal-item">
+                            <p class="signal-item_5">RSI </p>
+                            <span class="signal-item_5-data"> </span>
+                        </div>
+                        <div class="infor_signal-item">
+                            <p class="signal-item_6">MACD </p>
+                            <span class="signal-item_6-data"> </span>
+                        </div>
+    
+                        <div class="infor_signal-item" style="margin-top: 10px;">
+                            <strong class="signal-item_7">Kết quả  </strong>
+                            <span class="signal-item_7-data"> MUA </span>
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class="img-buy">
+                    <img src="./assets/img/Buy_AR.jpg" alt="" class="img-buy_2">
+                    </div>
+
+                </div>
+            </div>
+            <div class="stock-analysis-info">
+                <div class="stock-analysis-info_chart">
+                    <div class="info_chart-heading">TÌNH HÌNH TÀI CHÍNH</div>
+
+                </div>
+                <div class="chart_line1">
+                        <canvas id="chart_rev"></canvas>
+                        <canvas id="chart_profit"></canvas>
+                </div>
+                <div class="chart_line2">
+                    <canvas id="chart_asset"></canvas>
+                    <canvas id="chart_currency"></canvas>
+
+                </div>
+            </div>
+
+            
+          </div>
+
+      </div>
+
+            
+</body>
+<script src="./assets/js/CallApi.js"></script>
+
+</html>
+

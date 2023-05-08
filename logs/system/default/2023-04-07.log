@@ -1,0 +1,75 @@
+{
+  _id: '9193353e-8af1-441a-abbc-6423ff184f8b',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: UnprocessableEntityException: http.clientError.unprocessableEntity
+      at ValidationPipe.exceptionFactory (/Users/mac/Downloads/apec.minigame.api-develop/src/common/request/request.module.ts:37:25)
+      at ValidationPipe.transform (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/common/pipes/validation.pipe.js:66:30)
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+      at resolveParamValue (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:147:23)
+      at async Promise.all (index 0)
+      at pipesFn (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:150:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-execution-context.js:37:30 {
+    response: {
+      statusCode: 5981,
+      message: 'http.clientError.unprocessableEntity',
+      errors: [
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'trandingDate',
+          children: [],
+          constraints: { isDate: 'trandingDate must be a Date instance' }
+        },
+        ValidationError {
+          target: StockCreateDto {
+            stockCode: 'string',
+            exchangeCode: 'string',
+            industry: 'string',
+            refPrice: 0,
+            trandingDate: {},
+            overview: 'string',
+            marketCapital: 0,
+            sumVol10d: 0,
+            outstandingShares: 0,
+            EPS: 0,
+            PE: 0,
+            ROA: 0,
+            ROE: 0,
+            netRev: 0,
+            netInc: 0,
+            reportDate: {},
+            shortTrend: 'string'
+          },
+          value: {},
+          property: 'reportDate',
+          children: [],
+          constraints: { isDate: 'reportDate must be a Date instance' }
+        }
+      ]
+    },
+    status: 422
+  },
+  level: 'error',
+  message: 'http.clientError.unprocessableEntity',
+  timestamp: '2023-04-07T07:33:20.425Z'
+}

@@ -1,0 +1,73 @@
+{
+  _id: 'a9bee8e2-206f-4df3-a900-deb7271a3aff',
+  class: 'StockAdminController',
+  function: 'createStock',
+  path: '/api/v1/admin/stock/create',
+  data: InternalServerErrorException: http.serverError.internalServerError
+      at StockAdminController.createStock (/Users/mac/Downloads/apec.minigame.api-develop/src/modules/stock/controllers/stock.admin.controller.ts:194:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    response: {
+      statusCode: 5990,
+      message: 'http.serverError.internalServerError',
+      error: 'StockEntity validation failed: stockCodes: Cast to embedded failed for value "string" (type string) at path "stockCodes" because of "ObjectParameterError"'
+    },
+    status: 500
+  },
+  level: 'error',
+  message: 'http.serverError.internalServerError',
+  timestamp: '2023-05-04T07:54:20.200Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected token S in JSON at position 1086
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: 'Unexpected token S in JSON at position 1086',
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: 'Unexpected token S in JSON at position 1086',
+  timestamp: '2023-05-04T09:14:34.362Z'
+}
+{
+  _id: 'ErrorHttpFilter',
+  class: 'ErrorHttpFilter',
+  function: 'catch',
+  path: '/api/v1/admin/stock/create',
+  data: BadRequestException: Unexpected token ' in JSON at position 1
+      at RoutesResolver.mapExternalException (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:100:24)
+      at callback (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/routes-resolver.js:86:24)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/@nestjs/core/router/router-proxy.js:20:23
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:71:5)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13)
+      at /Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:286:9
+      at Function.process_params (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:280:10)
+      at Layer.handle_error (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/layer.js:67:12)
+      at trim_prefix (/Users/mac/Downloads/apec.minigame.api-develop/node_modules/express/lib/router/index.js:326:13) {
+    response: {
+      statusCode: 400,
+      message: "Unexpected token ' in JSON at position 1",
+      error: 'Bad Request'
+    },
+    status: 400
+  },
+  level: 'error',
+  message: "Unexpected token ' in JSON at position 1",
+  timestamp: '2023-05-04T14:46:29.244Z'
+}
