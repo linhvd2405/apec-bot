@@ -1,9 +1,32 @@
+# version: '3.8'
+# services:
+#   service:
+#     build: .
+#     container_name: minigame_service
+#     hostname: minigame_service
+#     ports:
+#       - 3000:3000
+#     networks:
+#       - app-network
+#     volumes:
+#       - ./src/:/app/src/
+#       - .env/:/app/.env
+#     restart: unless-stopped
+# networks:
+#   app-network:
+#     name: app-network
+#     driver: bridge
+# volumes:
+#   dbdata:
+
+
 version: '3.8'
+
 services:
-  service:
+  nestjs:
     build: .
-    container_name: minigame_service
-    hostname: minigame_service
+    container_name: apec_bot
+    hostname: apec_bot
     ports:
       - 3000:3000
     networks:
@@ -12,9 +35,42 @@ services:
       - ./src/:/app/src/
       - .env/:/app/.env
     restart: unless-stopped
+    environment:
+      MONGODB_CONNECTION_STRING: mongodb://mongo:27017/dp_pm
+    links:
+      - mongo
+      - selenium
+    depends_on:
+      - mongo
+      - selenium
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: db_pm
+      MONGO_INITDB_ROOT_USERNAME: 
+      MONGO_INITDB_ROOT_PASSWORD: 
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - app-network
+
+  selenium:
+    image: selenium/standalone-chrome-debug:latest
+    container_name: selenium
+    ports:
+      - "4444:4444"
+      - "5900:5900"
+    networks:
+      - app-network
+
 networks:
   app-network:
     name: app-network
     driver: bridge
+
 volumes:
   dbdata:

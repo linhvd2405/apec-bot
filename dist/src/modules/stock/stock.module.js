@@ -28,7 +28,11 @@ StockModule = __decorate([
             stock_bulk_repository_1.StockBulkRepository,
             screenshot_worker_service_1.ScreenshotWorkerService,
         ],
-        exports: [stock_service_1.StockService, stock_bulk_service_1.StockBulkService, screenshot_worker_service_1.ScreenshotWorkerService],
+        exports: [
+            stock_service_1.StockService,
+            stock_bulk_service_1.StockBulkService,
+            screenshot_worker_service_1.ScreenshotWorkerService,
+        ],
         imports: [
             mongoose_1.MongooseModule.forFeature([
                 {
@@ -36,7 +40,7 @@ StockModule = __decorate([
                     schema: stock_schema_1.StockSchema,
                     collection: stock_schema_1.StockDatabaseName,
                 },
-            ], database_constant_1.DATABASE_CONNECTION_NAME)
+            ], database_constant_1.DATABASE_CONNECTION_NAME),
         ],
     })
 ], StockModule);

@@ -40,3 +40,6 @@ export interface IStockUpdate {
     macd: string;
     reportDate: string[];
 }
+export interface IStockUpdateStatus {
+    status: number;
+}

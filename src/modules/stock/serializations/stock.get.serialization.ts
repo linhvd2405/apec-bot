@@ -23,7 +23,6 @@ export class StockGetSerialization {
 
 
     @ApiProperty({
-        description: '',
         required: true,
     })
     readonly status: number;

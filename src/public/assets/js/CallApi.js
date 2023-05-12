@@ -54,16 +54,19 @@ async function fetchData(){
           dataCol1.innerHTML = liquidity;
     
           const refPrice  = result.data?.data.refPrice;
-          const dataCol3 = document.querySelector('.data-col-3')
-          dataCol3.innerHTML = refPrice;
+          const dataCol3 = document.querySelector('.data-col-3');
+          const formattedRefPrice = (+refPrice).toLocaleString('en');
+          dataCol3.innerHTML = formattedRefPrice;
     
           const targetPrice  = result.data?.data.targetPrice;
           const dataCol4 = document.querySelector('.data-col-4')
-          dataCol4.innerHTML = targetPrice;
+          const formattedTargetPrice = (+targetPrice).toLocaleString('en');
+          dataCol4.innerHTML = formattedTargetPrice;
     
           const cutlossPrice  = result.data?.data.cutlossPrice;
-          const dataCol5 = document.querySelector('.data-col-5')
-          dataCol5.innerHTML = cutlossPrice;
+          const dataCol5 = document.querySelector('.data-col-5');
+          const formattedCutlossPrice = (+cutlossPrice).toLocaleString('en');
+          dataCol5.innerHTML = formattedCutlossPrice;
     
           const shortTrend  = result.data?.data.shortTrend;
           const dataCol6 = document.querySelector('.data-col-6')
@@ -74,20 +77,24 @@ async function fetchData(){
           contentCompanyIntro.innerHTML = overview;
     
           const marketCapital  = result.data?.data.marketCapital;
-          const synthesisItem1Data = document.querySelector('.synthesis-item_1-data')
-          synthesisItem1Data.innerHTML = marketCapital + '    tỷ';
+          const synthesisItem1Data = document.querySelector('.synthesis-item_1-data');
+          const formattedMarketCapital = (+marketCapital).toLocaleString('en');
+          synthesisItem1Data.innerHTML = formattedMarketCapital + '    tỷ';
     
           const outstandingShares  = result.data?.data.outstandingShares;
-          const synthesisItem2Data = document.querySelector('.synthesis-item_2-data')
-          synthesisItem2Data.innerHTML = outstandingShares;
+          const synthesisItem2Data = document.querySelector('.synthesis-item_2-data');
+          const formattedOutstandingShares = (+outstandingShares).toLocaleString('en');
+          synthesisItem2Data.innerHTML = formattedOutstandingShares;
     
           const sumVol10d  = result.data?.data.sumVol10d;
-          const synthesisItem3Data = document.querySelector('.synthesis-item_3-data')
-          synthesisItem3Data.innerHTML = sumVol10d;
+          const synthesisItem3Data = document.querySelector('.synthesis-item_3-data');
+          const formattedSumVol10d = (+sumVol10d).toLocaleString('en');
+          synthesisItem3Data.innerHTML = formattedSumVol10d;
     
           const eps  = result.data?.data.eps;
-          const synthesisItem4Data = document.querySelector('.synthesis-item_4-data')
-          synthesisItem4Data.innerHTML = eps;
+          const synthesisItem4Data = document.querySelector('.synthesis-item_4-data');
+          const formattedEps = (+eps).toLocaleString('en');
+          synthesisItem4Data.innerHTML = formattedEps;
     
           const pe = result.data?.data.pe;
           const synthesisItem5Data = document.querySelector('.synthesis-item_5-data')
@@ -132,7 +139,7 @@ async function fetchData(){
           
           codesItemCode.innerHTML = stockCode;
           codesItemRating.innerHTML = rating;
-    
+        });
     
           // phần biểu đồ 
           const netRevData = result?.data?.data?.netRev || [];
@@ -414,7 +421,7 @@ async function fetchData(){
               }
             }
           });
-        });
+        // });
   } catch(error){
     console.log(error);
   }

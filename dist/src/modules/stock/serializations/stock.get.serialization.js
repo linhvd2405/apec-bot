@@ -34,7 +34,6 @@ __decorate([
 ], StockGetSerialization.prototype, "isActive", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({
-        description: '',
         required: true,
     }),
     __metadata("design:type", Number)

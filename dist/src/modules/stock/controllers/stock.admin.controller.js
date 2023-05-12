@@ -61,10 +61,15 @@ let StockAdminController = class StockAdminController {
             data: stock,
         };
     }
+    async getStockStatus(_id) {
+        const stock = await this.stockService.findOneById(_id);
+        console.log({ status: stock.status, stockCode: stock.stockCode });
+        return {
+            data: { status: stock.status, stockCode: stock.stockCode },
+        };
+    }
     async createStock(stockCreateDto) {
-        const exist = await this.stockService.exists(stockCreateDto.stockCode);
-        if (exist) {
-        }
+        await this.stockService.exists(stockCreateDto.stockCode);
         try {
             const create = await this.stockService.create(stockCreateDto);
             this.stockService.screenshot(create);
@@ -81,9 +86,7 @@ let StockAdminController = class StockAdminController {
         }
     }
     async update(stock, { status, stockCode, nameCompany, exchangeCode, rating, industry, refPrice, liquidity, shortTrend, targetPrice, cutlossPrice, trandingDate, overview, marketCapital, sumVol10d, outstandingShares, eps, pe, de, roe, netRev, netInc, debt, loan, cfi, cfo, cff, stockCodes, reportDate, adx, rsi, macd, }) {
-        const check = await this.stockService.exists(stockCode);
-        if (check) {
-        }
+        await this.stockService.exists(stockCode);
         try {
             await this.stockService.update(stock._id, {
                 status,
@@ -172,7 +175,7 @@ let StockAdminController = class StockAdminController {
     }
 };
 __decorate([
-    (0, response_decorator_1.ResponsePaging)('stock.list', {}),
+    (0, response_decorator_1.ResponsePaging)('stock.list'),
     (0, common_1.Get)('/list'),
     openapi.ApiResponse({ status: 200 }),
     __param(0, (0, common_1.Query)()),
@@ -192,6 +195,14 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], StockAdminController.prototype, "getStock", null);
+__decorate([
+    (0, common_1.Get)(':_id/status'),
+    openapi.ApiResponse({ status: 200, type: Object }),
+    __param(0, (0, common_1.Param)('_id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], StockAdminController.prototype, "getStockStatus", null);
 __decorate([
     (0, response_decorator_1.Response)('stock.create', {
         classSerialization: response_id_serialization_1.ResponseIdSerialization,

@@ -13,6 +13,7 @@ exports.StockService = void 0;
 const common_1 = require("@nestjs/common");
 const stock_repository_1 = require("../repositories/stock.repository");
 const screenshot_worker_service_1 = require("../../workers/screenshot-worker.service");
+const screenshot_worker_1 = require("../services/screenshot-worker");
 let StockService = class StockService {
     constructor(stockRepository, screenshotWorkerService) {
         this.stockRepository = stockRepository;
@@ -74,46 +75,22 @@ let StockService = class StockService {
             macd,
             isActive: true,
         };
-        create.status = 0;
+        create.status = 1;
         return this.stockRepository.create(create, options);
     }
     async screenshot(stock) {
-        this.screenshotWorkerService.processScreenshot(stock);
+        const worker = new screenshot_worker_1.ScreenshotWorker(stock);
+        await worker.run();
+        if (stock.status === 2) {
+            await this.update(stock._id.toString(), { status: 2 });
+        }
+        else {
+            await this.update(stock._id.toString(), { status: -1 });
+        }
     }
-    async update(_id, { status, stockCode, nameCompany, exchangeCode, rating, industry, refPrice, liquidity, shortTrend, targetPrice, cutlossPrice, trandingDate, overview, marketCapital, sumVol10d, outstandingShares, eps, pe, de, roe, netRev, netInc, debt, loan, cfi, cfo, cff, stockCodes, reportDate, adx, rsi, macd, }, options) {
+    async update(_id, { status, }, options) {
         const update = {
             status,
-            stockCode,
-            nameCompany,
-            exchangeCode,
-            rating,
-            industry,
-            refPrice,
-            liquidity,
-            shortTrend,
-            targetPrice,
-            cutlossPrice,
-            trandingDate,
-            overview,
-            marketCapital,
-            sumVol10d,
-            outstandingShares,
-            eps,
-            pe,
-            de,
-            roe,
-            netRev,
-            netInc,
-            debt,
-            loan,
-            cfi,
-            cfo,
-            cff,
-            stockCodes,
-            reportDate,
-            adx,
-            rsi,
-            macd,
         };
         return this.stockRepository.updateOneById(_id, update, options);
     }

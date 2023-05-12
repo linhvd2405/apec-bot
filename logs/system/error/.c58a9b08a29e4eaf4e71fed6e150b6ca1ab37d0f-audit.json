@@ -154,6 +154,11 @@
             "date": 1683530907922,
             "name": "logs/system/error/2023-05-08.log",
             "hash": "bd96a8a51b48d145bf8949b7d26c4949ca79346fe7816e5c7b4da65d58e8aa14"
+        },
+        {
+            "date": 1683878361624,
+            "name": "logs/system/error/2023-05-12.log",
+            "hash": "1ee6cd2d11974fd3a22bdc2ec6dbba1a6112ca4c63842626f4ed7909c33ff877"
         }
     ],
     "hashType": "sha256"

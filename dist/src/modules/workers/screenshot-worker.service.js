@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const screenshot_worker_1 = require("../stock/services/screenshot-worker");
 let ScreenshotWorkerService = class ScreenshotWorkerService {
     constructor() {
-        this.maxWorkerCount = 10;
+        this.maxWorkerCount = 20;
         this.activeWorkers = [];
         this.onWorkerComplete = (worker) => {
             const index = this.activeWorkers.indexOf(worker);

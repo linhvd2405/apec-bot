@@ -12,6 +12,7 @@ export declare class StockAdminController {
     constructor(paginationService: PaginationService, stockService: StockService);
     list({ page, perPage, sort, search, availableSort, availableSearch, }: StockListDto): Promise<IResponsePaging>;
     getStock(_id: string): Promise<IResponse>;
+    getStockStatus(_id: string): Promise<IResponse>;
     createStock(stockCreateDto: StockCreateDto): Promise<IResponse>;
     update(stock: StockDocument, { status, stockCode, nameCompany, exchangeCode, rating, industry, refPrice, liquidity, shortTrend, targetPrice, cutlossPrice, trandingDate, overview, marketCapital, sumVol10d, outstandingShares, eps, pe, de, roe, netRev, netInc, debt, loan, cfi, cfo, cff, stockCodes, reportDate, adx, rsi, macd, }: StockUpdateDto): Promise<IResponse>;
     delete(stock: IStockDocument): Promise<void>;

@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
 import { StockEntity, StockDocument } from '../schemas/stock.schema';
 import { StockCreateDto } from '../dtos/stock.create.dto';
 import { StockUpdateDto } from 'src/modules/stock/dtos/stock.update.dto';
-import {IStockUpdate} from 'src/modules/stock/interfaces/stock.interface';
+import { IStockUpdateStatus} from 'src/modules/stock/interfaces/stock.interface';
 import {IStock} from 'src/modules/stock/interfaces/stock._id.interface';
 
 import {
@@ -18,7 +17,7 @@ import {StockRepository} from 'src/modules/stock/repositories/stock.repository';
 import { StockActiveDto } from 'src/modules/stock/dtos/stock.active.dto';
 import { IStockService } from 'src/modules/stock/interfaces/stock.service.interface';
 import {ScreenshotWorkerService} from 'src/modules/workers/screenshot-worker.service'
-
+import { ScreenshotWorker } from '../services/screenshot-worker';
 
 
 @Injectable()
@@ -73,7 +72,6 @@ async exists(
 
 async create(
   { 
-    // _id,
     status,
     stockCode,
     nameCompany,
@@ -110,7 +108,6 @@ async create(
   options?: IDatabaseCreateOptions
 ): Promise<StockDocument> {
   const create: StockEntity = {
-    // _id,
     status,
     stockCode,
     nameCompany,
@@ -146,94 +143,37 @@ async create(
     isActive: true,
 
   };
-  create.status = 0
+  create.status = 1
   return this.stockRepository.create<StockEntity>(create, options);
-  // const savedStock = await this.stockRepository.create<StockEntity>(create, options);
-  // this.screenshotWorkerService.processScreenshot(savedStock);
-  // return savedStock;
+
 }
 
-async screenshot(stock : IStock): Promise<void> {
-     this.screenshotWorkerService.processScreenshot(stock);
-  } 
 
 
+async screenshot(stock: IStock): Promise<void> {
+  const worker = new ScreenshotWorker(stock);
+  await worker.run();
+  if (stock.status === 2) {
+    await this.update(stock._id.toString(), { status: 2 });
+  } else {
+    await this.update(stock._id.toString(), { status: -1 });
+  }
+}
 
 
 async update(
   _id: string,
   { 
     status,
-    stockCode,
-    nameCompany,
-    exchangeCode,
-    rating,
-    industry,
-    refPrice,
-    liquidity,
-    shortTrend,
-    targetPrice,
-    cutlossPrice,
-    trandingDate,
-    overview,
-    marketCapital,
-    sumVol10d,
-    outstandingShares,
-    eps,
-    pe,
-    de,
-    roe,
-    netRev,
-    netInc,
-    debt,
-    loan,
-    cfi,
-    cfo,
-    cff,
-    stockCodes,
-    reportDate,
-    adx,
-    rsi,
-    macd, }: StockUpdateDto,
+  }: StockUpdateDto,
   options?: IDatabaseOptions
 ): Promise<StockDocument> {
-  const update: IStockUpdate = {
+  const update: IStockUpdateStatus = {
     status,
-    stockCode,
-    nameCompany,
-    exchangeCode,
-    rating,
-    industry,
-    refPrice,
-    liquidity,
-    shortTrend,
-    targetPrice,
-    cutlossPrice,
-    trandingDate,
-    overview,
-    marketCapital,
-    sumVol10d,
-    outstandingShares,
-    eps,
-    pe,
-    de,
-    roe,
-    netRev,
-    netInc,
-    debt,
-    loan,
-    cfi,
-    cfo,
-    cff,
-    stockCodes,
-    reportDate,
-    adx,
-    rsi,
-    macd,
   };
-  // update.status = 'done processing';
 
-  return this.stockRepository.updateOneById<IStockUpdate>(
+
+  return this.stockRepository.updateOneById<IStockUpdateStatus>(
       _id,
       update,
       options

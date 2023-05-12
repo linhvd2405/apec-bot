@@ -42,6 +42,7 @@ class ScreenshotWorker {
             .setChromeOptions(new chrome_1.default.Options()
             .headless()
             .windowSize({ width: 900, height: 12000 }))
+            .usingServer('http://localhost:4444/wd/hub')
             .build();
         try {
             await driver.get(`http://localhost:3000/${this.stock._id.toString()}`);
@@ -54,7 +55,7 @@ class ScreenshotWorker {
             const imageFile = await fs.promises.readFile(`src/public/assets/img/img.web/${this.stock.stockCode}.jpg`);
             formData.append('file', imageFile, { filename: `${this.stock.stockCode}.jpg` });
             formData.append('_id', this.stock._id.toString());
-            const response = await axios_1.default.post('https://7e54-118-71-105-160.ngrok-free.app/api/v1/jobs/uploadfile/', formData, {
+            const response = await axios_1.default.post('http://10.0.120.49:5000/api/v1/jobs/uploadfile/', formData, {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'multipart/form-data'
@@ -63,7 +64,7 @@ class ScreenshotWorker {
                 maxBodyLength: Infinity,
             });
             console.log('Response:', response.data);
-            this.stock.status = 1;
+            this.stock.status = 2;
         }
         catch (error) {
             this.stock.status = -1;
@@ -72,6 +73,7 @@ class ScreenshotWorker {
         finally {
             await driver.quit();
         }
+        console.log(this.stock.status);
     }
 }
 exports.ScreenshotWorker = ScreenshotWorker;

@@ -17,7 +17,7 @@ export declare class StockService implements IStockService {
     exists(stockCode: string, options?: IDatabaseExistOptions): Promise<boolean>;
     create({ status, stockCode, nameCompany, exchangeCode, rating, industry, refPrice, liquidity, shortTrend, targetPrice, cutlossPrice, trandingDate, overview, marketCapital, sumVol10d, outstandingShares, eps, pe, de, roe, netRev, netInc, debt, loan, cfi, cfo, cff, stockCodes, reportDate, adx, rsi, macd, }: StockCreateDto, options?: IDatabaseCreateOptions): Promise<StockDocument>;
     screenshot(stock: IStock): Promise<void>;
-    update(_id: string, { status, stockCode, nameCompany, exchangeCode, rating, industry, refPrice, liquidity, shortTrend, targetPrice, cutlossPrice, trandingDate, overview, marketCapital, sumVol10d, outstandingShares, eps, pe, de, roe, netRev, netInc, debt, loan, cfi, cfo, cff, stockCodes, reportDate, adx, rsi, macd, }: StockUpdateDto, options?: IDatabaseOptions): Promise<StockDocument>;
+    update(_id: string, { status, }: StockUpdateDto, options?: IDatabaseOptions): Promise<StockDocument>;
     inactive(_id: string, options?: IDatabaseOptions): Promise<StockDocument>;
     active(_id: string, options?: IDatabaseOptions): Promise<StockDocument>;
     deleteOneById(_id: string, options?: IDatabaseSoftDeleteOptions): Promise<StockDocument>;

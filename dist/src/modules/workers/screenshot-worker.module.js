@@ -15,7 +15,9 @@ let ScreenshotWorkerModule = class ScreenshotWorkerModule {
 };
 ScreenshotWorkerModule = __decorate([
     (0, common_1.Module)({
-        imports: [mongoose_1.MongooseModule.forFeature([{ name: stock_schema_1.StockEntity.name, schema: stock_schema_1.StockSchema }])],
+        imports: [
+            mongoose_1.MongooseModule.forFeature([{ name: stock_schema_1.StockEntity.name, schema: stock_schema_1.StockSchema }])
+        ],
         providers: [screenshot_worker_service_1.ScreenshotWorkerService],
         exports: [screenshot_worker_service_1.ScreenshotWorkerService],
     })

@@ -16,7 +16,11 @@ import { ScreenshotWorkerService } from '../workers/screenshot-worker.service';
     StockBulkRepository,
     ScreenshotWorkerService,
   ],
-  exports: [StockService, StockBulkService, ScreenshotWorkerService],
+  exports: [
+    StockService, 
+    StockBulkService, 
+    ScreenshotWorkerService,
+  ],
   imports: [
     MongooseModule.forFeature(
       [
@@ -27,7 +31,7 @@ import { ScreenshotWorkerService } from '../workers/screenshot-worker.service';
         },
       ],
       DATABASE_CONNECTION_NAME
-    )
+    ),
   ],
 })
 export class StockModule {}

@@ -11,7 +11,6 @@ export class StockCreateDto {
     })
 
     @IsNumber()
-    // @IsNotEmpty()
     @Type(() => Number)
     readonly status: number;
 
