@@ -45,7 +45,8 @@ class ScreenshotWorker {
             .usingServer('http://localhost:4444/wd/hub')
             .build();
         try {
-            await driver.get(`http://localhost:3000/${this.stock._id.toString()}`);
+            const baseUrl = process.env.BASE_URL;
+            await driver.get(`${baseUrl}/${this.stock._id.toString()}`);
             await driver.sleep(3000);
             const bodyElement = await driver.findElement(selenium_webdriver_1.By.css('#container > div'));
             const screenshot = await bodyElement.takeScreenshot();
@@ -55,7 +56,7 @@ class ScreenshotWorker {
             const imageFile = await fs.promises.readFile(`src/public/assets/img/img.web/${this.stock.stockCode}.jpg`);
             formData.append('file', imageFile, { filename: `${this.stock.stockCode}.jpg` });
             formData.append('_id', this.stock._id.toString());
-            const response = await axios_1.default.post('http://10.0.120.49:5000/api/v1/jobs/uploadfile/', formData, {
+            const response = await axios_1.default.post(process.env.API_URL, formData, {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'multipart/form-data'

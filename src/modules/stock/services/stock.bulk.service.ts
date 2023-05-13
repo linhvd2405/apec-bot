@@ -18,6 +18,7 @@ export class StockBulkService implements IStockBulkService {
         options?: IDatabaseManyOptions
     ): Promise<boolean> {
         return this.stockBulkRepository.deleteMany(find, options);
+        
     }
 
     async createMany(

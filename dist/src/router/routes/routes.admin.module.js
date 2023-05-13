@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RoutesAdminModule = void 0;
 const common_1 = require("@nestjs/common");
-const mongoose_1 = require("@nestjs/mongoose");
 const auth_module_1 = require("../../common/auth/auth.module");
 const setting_admin_controller_1 = require("../../common/setting/controllers/setting.admin.controller");
 const permission_admin_controller_1 = require("../../modules/permission/controllers/permission.admin.controller");
@@ -19,7 +18,6 @@ const user_admin_controller_1 = require("../../modules/user/controllers/user.adm
 const user_module_1 = require("../../modules/user/user.module");
 const stock_module_1 = require("../../modules/stock/stock.module");
 const stock_admin_controller_1 = require("../../modules/stock/controllers/stock.admin.controller");
-const cron_module_1 = require("../../modules/cron/cron.module");
 let RoutesAdminModule = class RoutesAdminModule {
 };
 RoutesAdminModule = __decorate([
@@ -39,8 +37,6 @@ RoutesAdminModule = __decorate([
             role_module_1.RoleModule,
             permission_module_1.PermissionModule,
             stock_module_1.StockModule,
-            mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/db_pm'),
-            cron_module_1.CronModule,
         ],
     })
 ], RoutesAdminModule);

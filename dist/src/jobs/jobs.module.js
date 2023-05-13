@@ -10,16 +10,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.JobsModule = void 0;
 const common_1 = require("@nestjs/common");
 const schedule_1 = require("@nestjs/schedule");
+const mongoose_1 = require("@nestjs/mongoose");
 const jobs_router_module_1 = require("./router/jobs.router.module");
+const jobs_service_1 = require("./jobs.service");
+const stock_module_1 = require("../modules/stock/stock.module");
 let JobsModule = JobsModule_1 = class JobsModule {
     static register() {
         if (process.env.JOB_ENABLE === 'true') {
             return {
                 module: JobsModule_1,
                 controllers: [],
-                providers: [],
+                providers: [jobs_service_1.CronService],
                 exports: [],
-                imports: [schedule_1.ScheduleModule.forRoot(), jobs_router_module_1.JobsRouterModule],
+                imports: [
+                    schedule_1.ScheduleModule.forRoot(),
+                    jobs_router_module_1.JobsRouterModule,
+                    mongoose_1.MongooseModule.forRoot(process.env.MONGODB_URI),
+                    stock_module_1.StockModule,
+                ],
             };
         }
         return {

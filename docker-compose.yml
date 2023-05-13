@@ -36,7 +36,7 @@ services:
       - .env/:/app/.env
     restart: unless-stopped
     environment:
-      MONGODB_CONNECTION_STRING: mongodb://mongo:27017/dp_pm
+      MONGODB_CONNECTION_STRING: mongodb://localhost:27017/db_pm
     links:
       - mongo
       - selenium
@@ -50,20 +50,20 @@ services:
     ports:
       - 27017:27017
     environment:
-      MONGO_INITDB_DATABASE: db_pm
-      MONGO_INITDB_ROOT_USERNAME: 
-      MONGO_INITDB_ROOT_PASSWORD: 
+      MONGODB_DATABASE: db_pm
+      MONGODB_USERNAME: 
+      MONGODB_PASSWORD: 
     volumes:
       - dbdata:/data/db
     networks:
       - app-network
 
   selenium:
-    image: selenium/standalone-chrome-debug:latest
+    image: selenium/standalone-chrome:latest
     container_name: selenium
     ports:
       - "4444:4444"
-      - "5900:5900"
+      - "7900:7900"
     networks:
       - app-network
 

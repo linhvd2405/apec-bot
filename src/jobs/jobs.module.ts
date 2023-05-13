@@ -1,6 +1,9 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
+import { MongooseModule } from '@nestjs/mongoose';
 import { JobsRouterModule } from './router/jobs.router.module';
+import { CronService } from './jobs.service';
+import {StockModule} from 'src/modules/stock/stock.module'
 
 @Module({})
 export class JobsModule {
@@ -9,9 +12,14 @@ export class JobsModule {
             return {
                 module: JobsModule,
                 controllers: [],
-                providers: [],
+                providers: [CronService],
                 exports: [],
-                imports: [ScheduleModule.forRoot(), JobsRouterModule],
+                imports: [
+                    ScheduleModule.forRoot(), 
+                    JobsRouterModule,
+                    MongooseModule.forRoot(process.env.MONGODB_URI),
+                    StockModule,
+                ],
             };
         }
 
