@@ -17,17 +17,18 @@ FROM node:18.16.0
 
 WORKDIR /app
 
-COPY . .
+COPY package.json yarn.lock ./
 
 RUN yarn install 
 
-
-COPY package.json yarn.lock ./
+COPY nest-cli.json ./
 
 RUN touch .env
 
 RUN set -x && yarn
 
 EXPOSE 3000
+
+COPY . .
 
 CMD ["yarn", "start:dev"]

@@ -1,6 +1,6 @@
 
 import { IStock } from '../interfaces/stock._id.interface';
-import { By, Builder } from 'selenium-webdriver';
+import { WebDriver,By, Builder } from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome';
 import * as fs from 'fs';
 import axios from 'axios';
@@ -14,14 +14,16 @@ export class ScreenshotWorker {
   }
 
   async run() {
-    const driver = await new Builder()
+    const driver : WebDriver = await new Builder()
       .forBrowser('chrome')
       .setChromeOptions(
         new chrome.Options()
-        .headless()
+        // .headless()
         .windowSize({ width: 900, height: 12000 })
+        .addArguments('--no-sandbox')
+        // .setChromeBinaryPath('/Applications/Google\ Chrome.app')
       )
-      .usingServer('http://localhost:4444/wd/hub')
+      .usingServer('http://localhost:4444')
       .build();
 
     try {

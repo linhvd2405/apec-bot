@@ -20,11 +20,69 @@
 #   dbdata:
 
 
-version: '3.8'
+# version: '3.8'
+
+# services:
+#   nestjs:
+#     build: .
+#     container_name: apec_bot
+#     hostname: apec_bot
+#     ports:
+#       - 3000:3000
+#     networks:
+#       - app-network
+#     volumes:
+#       - ./src/:/app/src/
+#       - .env/:/app/.env
+#     restart: unless-stopped
+#     environment:
+#       MONGODB_CONNECTION_STRING: mongodb://localhost:27017/db_pm
+#     links:
+#       - mongo
+#       - selenium
+#     depends_on:
+#       - mongo
+#       - selenium
+
+#   mongo:
+#     image: mongo:latest
+#     container_name: mongodb
+#     ports:
+#       - 27017:27017
+#     environment:
+#       MONGODB_DATABASE: db_pm
+#       MONGODB_USERNAME: 
+#       MONGODB_PASSWORD: 
+#     volumes:
+#       - dbdata:/data/db
+#     networks:
+#       - app-network
+
+#   selenium:
+#     image: selenium/standalone-chrome:latest
+#     container_name: selenium
+#     ports:
+#       - "4444:4444"
+#       - "7900:7900"
+#     networks:
+#       - app-network
+
+# networks:
+#   app-network:
+#     name: app-network
+#     driver: bridge
+
+# volumes:
+#   dbdata:
+
+
+version: '3'
 
 services:
   nestjs:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: apec_bot
     hostname: apec_bot
     ports:
@@ -32,14 +90,12 @@ services:
     networks:
       - app-network
     volumes:
-      - ./src/:/app/src/
-      - .env/:/app/.env
+      - ./src:/app/src
+      - .env:/app/.env
     restart: unless-stopped
     environment:
-      MONGODB_CONNECTION_STRING: mongodb://localhost:27017/db_pm
-    links:
-      - mongo
-      - selenium
+      - MONGODB_URI=mongodb://mongodb:27017/db_pm 
+      - SELENIUM_URL = http://localhost:4444
     depends_on:
       - mongo
       - selenium
@@ -50,16 +106,14 @@ services:
     ports:
       - 27017:27017
     environment:
-      MONGODB_DATABASE: db_pm
-      MONGODB_USERNAME: 
-      MONGODB_PASSWORD: 
+      - MONGO_INITDB_DATABASE=db_pm
     volumes:
       - dbdata:/data/db
     networks:
       - app-network
-
+  
   selenium:
-    image: selenium/standalone-chrome:latest
+    image: selenium/standalone-chrome:112.0
     container_name: selenium
     ports:
       - "4444:4444"
@@ -74,3 +128,5 @@ networks:
 
 volumes:
   dbdata:
+
+

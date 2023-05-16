@@ -21,7 +21,7 @@ export class MaintenanceMiddleware implements NestMiddleware {
         const maintenance: SettingDocument =
             await this.settingService.findOneByName('maintenance');
 
-        if (maintenance.value as boolean) {
+        if (maintenance?.value as boolean) {
             throw new ServiceUnavailableException({
                 statusCode:
                     ENUM_ERROR_STATUS_CODE_ERROR.ERROR_SERVICE_UNAVAILABLE,
