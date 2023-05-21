@@ -1,1 +1,0 @@
-{"version":3,"file":"stock.doc.constant.js","sourceRoot":"","sources":["../../../../../src/modules/stock/constants/stock.doc.constant.ts"],"names":[],"mappings":";;;AAAA,2CAAwC;AAE3B,QAAA,iBAAiB,GAAG;IAC7B;QACI,IAAI,EAAE,OAAO;QACb,eAAe,EAAE,KAAK;QACtB,QAAQ,EAAE,IAAI;QACd,IAAI,EAAE,QAAQ;QACd,OAAO,EAAE,aAAK,CAAC,QAAQ,CAAC,eAAe,EAAE;KAC5C;CACJ,CAAC"}

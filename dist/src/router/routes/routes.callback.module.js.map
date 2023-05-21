@@ -1,1 +1,0 @@
-{"version":3,"file":"routes.callback.module.js","sourceRoot":"","sources":["../../../../src/router/routes/routes.callback.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAwC;AAQjC,IAAM,oBAAoB,GAA1B,MAAM,oBAAoB;CAAG,CAAA;AAAvB,oBAAoB;IANhC,IAAA,eAAM,EAAC;QACJ,WAAW,EAAE,EAAE;QACf,SAAS,EAAE,EAAE;QACb,OAAO,EAAE,EAAE;QACX,OAAO,EAAE,EAAE;KACd,CAAC;GACW,oBAAoB,CAAG;AAAvB,oDAAoB"}
