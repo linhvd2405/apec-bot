@@ -101,7 +101,7 @@ export class StockAdminController {
   @Get(':_id')
   async getStock(@Param('_id') _id: string): Promise<IResponse> {
     const stock: IStock = await this.stockService.findOneById(_id);
-    console.log({ stock })
+    // console.log({ stock })
     return {
       data: stock,
     };
@@ -111,7 +111,7 @@ export class StockAdminController {
   @Get(':_id/status')
   async getStockStatus(@Param('_id') _id: string): Promise<IResponse> {
     const stock: IStock = await this.stockService.findOneById(_id);
-    console.log({ status: stock.status, stockCode: stock.stockCode })
+    // console.log({ status: stock.status, stockCode: stock.stockCode })
     return {
       data: { status: stock.status, stockCode: stock.stockCode },
     };

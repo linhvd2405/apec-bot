@@ -9,11 +9,11 @@ RUN touch .env
 
 RUN set -x && yarn
 
-RUN apk update && \
-    apk add --no-cache tzdata && \
-    cp /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
-    echo "Asia/Ho_Chi_Minh" > /etc/timezone
-
+RUN apk add --no-cache tzdata && \
+    ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
+    echo "Asia/Ho_Chi_Minh" > /etc/timezone && \
+    date
+    
 COPY . .
 
 RUN yarn build
