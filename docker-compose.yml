@@ -1,24 +1,23 @@
-
 version: '3'
 
 services:
   api:
     build: api
-      # context: .
-      # dockerfile: Dockerfile
-    container_name: api_bot
-    hostname: api_bot
+    container_name: apec_bot
+    hostname: apec_bot
     ports:
       - 3000:3000
     volumes:
       - ./api/.env:/app/.env
     restart: unless-stopped
     environment:
-      - MONGODB_URI=mongodb://mongodb:27017/db_pm 
+      - MONGODB_URI=mongodb://db:27017/db_pm 
       - SELENIUM_URL = http://selenium:4444
     depends_on:
       - db
       - selenium
+    networks:
+      - apec_bot
 
   db:
     image: mongo:latest
@@ -29,24 +28,34 @@ services:
       - MONGO_INITDB_DATABASE=db_pm
     volumes:
       - dbdata:/data/db
-
+    networks:
+      - apec_bot
   
   selenium:
-    image: seleniarm/standalone-chromium:4.1.1-alpha-20220119
+    image: selenium/standalone-chrome:112.0
     container_name: selenium
     ports:
       - "4444:4444"
       - "7900:7900"
-  
+    networks:
+      - apec_bot
+
   web:
     image: nginx
     ports:
       - 8000:80
     volumes:
-      - ./public:/usr/share/nginx/html
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./web/public:/usr/share/nginx/html
+      - ./web/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
     restart: unless-stopped     # or "always"
     command: /bin/sh -c "nginx -g 'daemon off;'"
+    networks:
+      - apec_bot
+
+networks:
+  apec_bot:
+    external: true
+    name: apec_bot
 
 volumes:
   dbdata:
